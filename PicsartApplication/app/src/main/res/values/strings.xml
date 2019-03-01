@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Picsart Application</string>
+
+    <string name="homeText">Home</string>
+
+    <string name="createText">Create Your Network</string>
+    <string name="startText">Stars following friends and artists on PicsArt</string>
+    <string name="signup">SIGN UP</string>
+
+    <string name="ladyText">@pan70</string>
+    <string name="ladyText2">23m / 3322 views</string>
+</resources>
