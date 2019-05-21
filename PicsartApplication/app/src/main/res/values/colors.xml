@@ -10,4 +10,6 @@
     <color name="backgroundAsh">#8F8C8C</color>
 
     <color name="signupColor">#3B9FE9</color>
+
+    <color name="remixButtonColor">#C711C4</color>
 </resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="match_parent"
+        android:background="#85BD98">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/boardNameId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Board Name"/>
+            <TextView
+                android:id="@+id/cardNameId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Name"
+                android:layout_below="@+id/boardNameId"/>
+            <TextView
+                android:id="@+id/card1Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="card1"
+                android:layout_below="@id/cardNameId"/>
+            <TextView
+                android:id="@+id/card2Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="card2"
+                android:layout_below="@id/card1Id"/>
+            <TextView
+                android:id="@+id/card3Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="card3"
+                android:layout_below="@id/card2Id"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -16,9 +16,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".7"
+            android:layout_weight=".6"
             android:background="@color/white"
-            android:layout_marginBottom="7dp">
+            android:layout_marginBottom="5dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -48,112 +48,30 @@
                 />
         </RelativeLayout>
 
+
+
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="5"
+            android:background="@color/white">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".6"
             android:background="@color/white"
-            android:layout_marginBottom="2dp">
-            <TextView
-                android:id="@+id/createText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/createText"
-                android:textStyle="bold"
-                android:textSize="25sp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"/>
-            <TextView
-                android:id="@+id/startText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/startText"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/createText"
-                android:textSize="20sp"
-                android:layout_marginBottom="20dp"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@id/startText"
-                android:text="@string/signup"
-                android:textSize="16sp"
-                android:background="@color/signupColor"
-                android:textColor="@color/white" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/white">
-            <ImageView
-                android:id="@+id/lady"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/ic_lady"
-                android:layout_centerVertical="true"
-                android:layout_margin="10dp"
-                />
-            <TextView
-                android:id="@+id/ladyText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/lady"
-                android:layout_centerVertical="true"
-                android:text="@string/ladyText"
-                android:textStyle="bold"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/lady"
-                android:layout_below="@+id/ladyText"
-                android:text="@string/ladyText2"/>
-            <ImageView
-                android:id="@+id/list"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="20dp"
-                android:src="@drawable/ic_list"
-                />
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_toLeftOf="@+id/list"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_personadd"
-                />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:background="#AEE91EAF">
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/ic_picsart"
-                        android:layout_centerInParent="true"
-                        android:scaleType="fitXY"/>
-                </LinearLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".7"
-            android:background="@color/white">
+            android:layout_marginTop="5dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

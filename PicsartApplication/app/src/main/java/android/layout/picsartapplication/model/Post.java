@@ -1,20 +1,43 @@
 package android.layout.picsartapplication.model;
 
-import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 public class Post {
+    int imagePost;
     int like;
-    int commentsCounter;
-    String comments;
+    int commentCounter;
+    int remixes;
+    ArrayList<String> comments;
     String caption;
-    LocalDateTime uploadDateTime;
+    String uploadTime;
+    User user;
+    Profile profile;
 
-    public Post(int like, int commentsCounter, String comments, String caption, LocalDateTime uploadDateTime) {
+    public Post(int imagePost, int like, int commentCounter, ArrayList<String> comments, String caption, String uploadTime) {
+        this.imagePost = imagePost;
         this.like = like;
-        this.commentsCounter = commentsCounter;
+        this.commentCounter = commentCounter;
         this.comments = comments;
         this.caption = caption;
-        this.uploadDateTime = uploadDateTime;
+        this.uploadTime = uploadTime;
+    }
+
+    public Post(int imagePost, int like, int commentCounter, User user, Profile profile, int remixes) {
+        this.imagePost = imagePost;
+        this.like = like;
+        this.commentCounter = commentCounter;
+        this.user = user;
+        this.profile = profile;
+        this.remixes = remixes;
+
+    }
+
+    public int getImagePost() {
+        return imagePost;
+    }
+
+    public void setImagePost(int imagePost) {
+        this.imagePost = imagePost;
     }
 
     public int getLike() {
@@ -25,19 +48,19 @@ public class Post {
         this.like = like;
     }
 
-    public int getCommentsCounter() {
-        return commentsCounter;
+    public int getCommentCounter() {
+        return commentCounter;
     }
 
-    public void setCommentsCounter(int commentsCounter) {
-        this.commentsCounter = commentsCounter;
+    public void setCommentCounter(int commentCounter) {
+        this.commentCounter = commentCounter;
     }
 
-    public String getComments() {
+    public ArrayList<String> getComments() {
         return comments;
     }
 
-    public void setComments(String comments) {
+    public void setComments(ArrayList<String> comments) {
         this.comments = comments;
     }
 
@@ -49,11 +72,35 @@ public class Post {
         this.caption = caption;
     }
 
-    public LocalDateTime getUploadDateTime() {
-        return uploadDateTime;
+    public String getUploadTime() {
+        return uploadTime;
     }
 
-    public void setUploadDateTime(LocalDateTime uploadDateTime) {
-        this.uploadDateTime = uploadDateTime;
+    public void setUploadTime(String uploadTime) {
+        this.uploadTime = uploadTime;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Profile getProfile() {
+        return profile;
+    }
+
+    public void setProfile(Profile profile) {
+        this.profile = profile;
+    }
+
+    public int getRemixes(){
+        return remixes;
+    }
+
+    public void setRemixes(int remixes){
+        this.remixes = remixes;
     }
 }

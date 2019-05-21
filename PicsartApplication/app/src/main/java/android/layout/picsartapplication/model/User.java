@@ -1,18 +1,48 @@
 package android.layout.picsartapplication.model;
 
+import java.util.ArrayList;
+
 public class User {
+    int userID;
     String email;
     String password;
     String userName;
     Profile profile;
-    Post post;
+    ArrayList<Post> postList;
 
-    public User(String email, String password, String userName, Profile profile, Post post) {
+    public User(int userID, String email, String password, String userName, Profile profile, ArrayList<Post> postList) {
+        this.userID = userID;
         this.email = email;
         this.password = password;
         this.userName = userName;
         this.profile = profile;
-        this.post = post;
+        this.postList = postList;
+    }
+
+    public User(int userID, String email, String password, String userName, Profile profile) {
+        this.userID = userID;
+        this.email = email;
+        this.password = password;
+        this.userName = userName;
+        this.profile = profile;
+    }
+
+    public User(String userName, Profile profile, ArrayList<Post> postList) {
+        this.userName = userName;
+        this.profile = profile;
+        this.postList = postList;
+    }
+
+    public User(String userName) {
+        this.userName = userName;
+    }
+
+    public int getUserID() {
+        return userID;
+    }
+
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
 
     public String getEmail() {
@@ -47,11 +77,11 @@ public class User {
         this.profile = profile;
     }
 
-    public Post getPost() {
-        return post;
+    public ArrayList<Post> getPostList() {
+        return postList;
     }
 
-    public void setPost(Post post) {
-        this.post = post;
+    public void setPostList(ArrayList<Post> postList) {
+        this.postList = postList;
     }
 }

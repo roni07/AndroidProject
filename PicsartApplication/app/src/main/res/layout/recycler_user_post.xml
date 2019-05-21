@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/user_post_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:layout_marginBottom="15dp">
+            <ImageView
+                android:id="@+id/prf_pic"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="23dp"/>
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/prf_pic"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/addPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_personadd"
+                android:layout_toLeftOf="@+id/list"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_list"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+            <ImageView
+                android:id="@+id/post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5">
+            <ImageView
+                android:id="@+id/like_icon_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"/>
+            <TextView
+                android:id="@+id/like_count_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/like_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Likes"
+                android:layout_toRightOf="@+id/like_count_id"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/comment_icon_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/like_icon_id"
+                android:src="@drawable/ic_comment"
+                android:layout_marginTop="25dp"/>
+            <TextView
+                android:id="@+id/comment_count_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/like_text_id"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/comment_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Comments"
+                android:layout_toRightOf="@+id/comment_count_id"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/remix_count_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/comment_text_id"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="7dp"/>
+
+            <TextView
+                android:id="@+id/remix_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/remix_count_id"
+                android:text="Remixes"
+                android:layout_marginBottom="10dp"/>
+
+
+            <Button
+                android:id="@+id/remix_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/buttonRemix"
+                android:layout_alignParentRight="true"
+                android:background="@color/remixButtonColor"
+                android:textColor="@color/white"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"/>
+        </RelativeLayout>
+</LinearLayout>

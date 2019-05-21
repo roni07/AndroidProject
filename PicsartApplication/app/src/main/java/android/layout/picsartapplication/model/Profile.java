@@ -3,14 +3,14 @@ package android.layout.picsartapplication.model;
 import android.graphics.Bitmap;
 
 public class Profile {
-    Bitmap profilePicture;
-    Bitmap coverPicture;
+    int profilePicture;
+    int coverPicture;
     int followers;
     int following;
     int fans;
     boolean isOnline;
 
-    public Profile(Bitmap profilePicture, Bitmap coverPicture, int followers, int following, int fans, boolean isOnline) {
+    public Profile(int profilePicture, int coverPicture, int followers, int following, int fans, boolean isOnline) {
         this.profilePicture = profilePicture;
         this.coverPicture = coverPicture;
         this.followers = followers;
@@ -19,19 +19,23 @@ public class Profile {
         this.isOnline = isOnline;
     }
 
-    public Bitmap getProfilePicture() {
-        return profilePicture;
-    }
-
-    public void setProfilePicture(Bitmap profilePicture) {
+    public Profile(int profilePicture) {
         this.profilePicture = profilePicture;
     }
 
-    public Bitmap getCoverPicture() {
+    public int getProfilePicture() {
+        return profilePicture;
+    }
+
+    public void setProfilePicture(int profilePicture) {
+        this.profilePicture = profilePicture;
+    }
+
+    public int getCoverPicture() {
         return coverPicture;
     }
 
-    public void setCoverPicture(Bitmap coverPicture) {
+    public void setCoverPicture(int coverPicture) {
         this.coverPicture = coverPicture;
     }
 

@@ -6,7 +6,10 @@
     <string name="createText">Create Your Network</string>
     <string name="startText">Stars following friends and artists on PicsArt</string>
     <string name="signup">SIGN UP</string>
+    <string name="buttonRemix">Remix</string>
 
-    <string name="ladyText">@pan70</string>
-    <string name="ladyText2">23m / 3322 views</string>
+
+    <string name="post1">Hello Every On. Today very sunny day!!!!!!</string>
+    <string name="post2">Hoorah we wine the game!!!</string>
+
 </resources>
